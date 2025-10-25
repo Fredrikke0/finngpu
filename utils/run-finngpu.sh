@@ -47,7 +47,7 @@ mkdir -p "$DATA_DIR" "$PUBLIC_DIR"
 setup_venv
 
 # Set umask for file creation
-umask 022
+umask 002
 
 # Run scraper to generate new data
 python3 finngpu.py -b blacklist.txt -w whitelist.txt
@@ -68,9 +68,9 @@ python3 price_analysis.py \
     -c "$ANALYSIS_FILE" \
     --min-fps 10
 
-# Generate HTML table
+# Generate HTML table snippet for web (served at /finngpu/data)
 cd "$WWW_DIR"
-python3 csv_to_html.py
+python3 -c "from csv_to_html import csv_to_html; open('$PUBLIC_DIR/table.html','w').write(csv_to_html('$ANALYSIS_FILE'))"
 
 # Check for differences in top ten ads
 if [[ -f "$ANALYSIS_FILE" ]]; then

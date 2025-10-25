@@ -7,3 +7,4 @@ data/*
 logs/*
 __pycache__/
 analysis.csv
+.env

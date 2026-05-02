@@ -9,19 +9,24 @@ LOG_DIR = BASE_DIR / "logs"
 DATA_DIR.mkdir(exist_ok=True)
 LOG_DIR.mkdir(exist_ok=True)
 
-# API settings
+# API settings — same search base URL as bedrefinn/populate_db.py
+# (use .../search/recommerce/... for full docs; .../map/recommerce/... is map pins only).
 API = {
-    "base_url": "https://www.finn.no/api/search-qf",
+    "base_url": "https://www.finn.no/map/podium-resource/content/api/search/recommerce/SEARCH_ID_BAP_COMMON",
     "rate_limit": 4,  # requests per second
     "params": {
-        "searchkey": "SEARCH_ID_BAP_COMMON",
-        "product_category": ["2.93.3215.8368", "2.93.3215.46", "2.93.3215.44"],
-        "q": "skjermkort or gpu",
+        "rows": 300,
+        "product_category": [
+            "2.93.3215.8368",
+            "2.93.3215.46",
+            "2.93.3215.44",
+        ],
+        "computer_components_type": 2,
         "price_from": 1000,
         "price_to": 8000,
-        "trade_type": "1",
-        "vertical": "bap"
-    }
+        "sort": "NEWEST",
+        "trade_type": 1,
+    },
 }
 
 # File paths

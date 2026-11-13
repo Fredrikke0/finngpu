@@ -12,7 +12,7 @@ from datetime import datetime
 from typing import NamedTuple
 from functools import lru_cache
 from tqdm import tqdm
-from config import API, BLACKLIST_FILE, IGNORED_MODELS_FILE, MODELS_FILE, OUTPUT_DIR, OUTPUT_FORMAT, SKIP_TERMS
+from config import API, BLACKLIST_FILE, DATA_DIR, IGNORED_MODELS_FILE, MODELS_FILE, OUTPUT_FORMAT, SKIP_TERMS
 
 
 class GPUMatch(NamedTuple):
@@ -425,7 +425,6 @@ def process_listings(items: list, gpu_models: list, blacklist: dict, whitelist: 
 
 def main():
     parser = argparse.ArgumentParser(description="Fetch and process GPU listings from Finn.no")
-    parser.add_argument("-f", "--file", type=str, help="Process existing CSV file")
     parser.add_argument("-b", "--blacklist", type=Path, default=BLACKLIST_FILE, help="Blacklist file path")
     parser.add_argument("-w", "--whitelist", type=Path, help="Whitelist file path")
     parser.add_argument("-v", "--verbose", action="store_true", help="Verbose output")
@@ -446,18 +445,10 @@ def main():
         print(f"Skip terms: {', '.join(SKIP_TERMS)}")
         print("-" * 80)
 
-    if args.file:
-        # Process existing file
-        try:
-            df = pd.read_csv(args.file)
-        except Exception as e:
-            print(f"Error reading file: {e}")
-            return
-    else:
-        df = process_listings(fetch_listings(), gpu_models, blacklist, whitelist, verbose=args.verbose)
+    df = process_listings(fetch_listings(), gpu_models, blacklist, whitelist, verbose=args.verbose)
 
     # Save results
-    output_path = args.output or OUTPUT_DIR / OUTPUT_FORMAT.format(date=datetime.now().strftime("%Y-%m-%d"))
+    output_path = args.output or DATA_DIR / OUTPUT_FORMAT.format(date=datetime.now().strftime("%Y-%m-%d"))
     df.to_csv(output_path, index=False)
     print(f"\nData saved to {output_path}")
 

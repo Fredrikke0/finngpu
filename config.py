@@ -3,11 +3,9 @@ from pathlib import Path
 # Base paths
 BASE_DIR = Path(__file__).parent
 DATA_DIR = BASE_DIR / "data"
-LOG_DIR = BASE_DIR / "logs"
 
 # Ensure directories exist
 DATA_DIR.mkdir(exist_ok=True)
-LOG_DIR.mkdir(exist_ok=True)
 
 # API settings — same search endpoint as bedrefinn/populate_db.py.
 API = {
@@ -37,11 +35,9 @@ API = {
 MODELS_FILE = BASE_DIR / "gpus.json"
 IGNORED_MODELS_FILE = BASE_DIR / "ignored_gpus.json"
 BLACKLIST_FILE = BASE_DIR / "blacklist.txt"
-WHITELIST_FILE = BASE_DIR / "whitelist.txt"
 
 # Listing processing
 SKIP_TERMS = ['pc', 'stasjonær', 'mining', 'mac', 'laptop', 'dell', 'gamingpoint', 'datamaskin', 'server', 'windows', 'lenovo', 'desktop', 'kjøler', 'VANNBLOKK', 'CPU']
 
 # Output settings
-OUTPUT_DIR = Path("/var/www/finngpu/data")
 OUTPUT_FORMAT = "finn_gpu_listings_{date}.csv"

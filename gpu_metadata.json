@@ -1,0 +1,577 @@
+{
+  "schema_version": 1,
+  "researched_on": "2026-11-12",
+  "gpus": {
+    "GeForce RTX 5090 32 GB": {
+      "release_date": "2025-01-30",
+      "msrp_usd": 1999,
+      "sources": ["https://www.nvidia.com/en-us/geforce/news/rtx-50-series-graphics-cards-gpu-laptop-announcements/"],
+      "notes": ""
+    },
+    "GeForce RTX 5080 16 GB": {
+      "release_date": "2025-01-30",
+      "msrp_usd": 999,
+      "sources": ["https://www.nvidia.com/en-us/geforce/news/rtx-50-series-graphics-cards-gpu-laptop-announcements/"],
+      "notes": ""
+    },
+    "GeForce RTX 5070 Ti 16 GB": {
+      "release_date": "2025-02-20",
+      "msrp_usd": 749,
+      "sources": [
+        "https://www.nvidia.com/en-us/geforce/news/rtx-50-series-graphics-cards-gpu-laptop-announcements/",
+        "https://www.nvidia.com/en-us/geforce/news/rtx-5070-ti-out-now/"
+      ],
+      "notes": ""
+    },
+    "GeForce RTX 5070 12 GB": {
+      "release_date": "2025-03-05",
+      "msrp_usd": 549,
+      "sources": [
+        "https://www.nvidia.com/en-us/geforce/news/rtx-50-series-graphics-cards-gpu-laptop-announcements/",
+        "https://www.nvidia.com/en-us/geforce/news/rtx-5070-out-now/"
+      ],
+      "notes": "Actual availability, not the February window in the initial announcement."
+    },
+    "GeForce RTX 5060 Ti 16 GB": {
+      "release_date": "2025-04-16",
+      "msrp_usd": 429,
+      "sources": ["https://www.nvidia.com/en-us/geforce/news/rtx-5060-desktop-family-laptop-5060-coming-soon/"],
+      "notes": "16 GB variant; not the $379 8 GB model."
+    },
+    "GeForce RTX 5060 Ti 8 GB": {
+      "release_date": "2025-04-16",
+      "msrp_usd": 379,
+      "sources": ["https://www.nvidia.com/en-us/geforce/news/rtx-5060-desktop-family-laptop-5060-coming-soon/"],
+      "notes": ""
+    },
+    "GeForce RTX 5060 8 GB": {
+      "release_date": "2025-05-19",
+      "msrp_usd": 299,
+      "sources": ["https://www.nvidia.com/en-us/geforce/news/rtx-5060-out-now/"],
+      "notes": ""
+    },
+    "GeForce RTX 5050 8 GB": {
+      "release_date": "2025-07",
+      "msrp_usd": 249,
+      "sources": ["https://www.nvidia.com/en-us/geforce/news/rtx-5050-desktop-gpu-and-laptops/"],
+      "notes": "Desktop variant. Month-level availability from NVIDIA's announcement; exact first retail day not independently verified."
+    },
+    "GeForce RTX 4090 24 GB": {
+      "release_date": "2022-10-12",
+      "msrp_usd": 1599,
+      "sources": ["https://www.nvidia.com/en-us/geforce/news/rtx-40-series-graphics-cards-announcements/"],
+      "notes": ""
+    },
+    "GeForce RTX 4080 SUPER 16 GB": {
+      "release_date": "2024-01-31",
+      "msrp_usd": 999,
+      "sources": ["https://www.nvidia.com/en-us/geforce/news/geforce-rtx-4080-4070-ti-4070-super-gpu/"],
+      "notes": ""
+    },
+    "GeForce RTX 4080 16 GB": {
+      "release_date": "2022-11-16",
+      "msrp_usd": 1199,
+      "sources": [
+        "https://www.nvidia.com/en-us/geforce/news/rtx-40-series-graphics-cards-announcements/",
+        "https://www.nvidia.com/en-us/geforce/news/geforce-rtx-4080-out-now/"
+      ],
+      "notes": "16 GB retail model, not the cancelled 12 GB RTX 4080."
+    },
+    "GeForce RTX 4070 Ti SUPER 16 GB": {
+      "release_date": "2024-01-24",
+      "msrp_usd": 799,
+      "sources": ["https://www.nvidia.com/en-us/geforce/news/geforce-rtx-4080-4070-ti-4070-super-gpu/"],
+      "notes": ""
+    },
+    "GeForce RTX 4070 Ti 12 GB": {
+      "release_date": "2023-01-05",
+      "msrp_usd": 799,
+      "sources": ["https://www.nvidia.com/en-us/geforce/news/geforce-rtx-4070-ti/"],
+      "notes": ""
+    },
+    "GeForce RTX 4070 SUPER 12 GB": {
+      "release_date": "2024-01-17",
+      "msrp_usd": 599,
+      "sources": ["https://www.nvidia.com/en-us/geforce/news/geforce-rtx-4080-4070-ti-4070-super-gpu/"],
+      "notes": ""
+    },
+    "GeForce RTX 4070 12 GB": {
+      "release_date": "2023-04-13",
+      "msrp_usd": 599,
+      "sources": ["https://www.nvidia.com/en-us/geforce/news/geforce-rtx-4070/"],
+      "notes": "Original launch MSRP."
+    },
+    "GeForce RTX 4060 Ti 8 GB": {
+      "release_date": "2023-05-24",
+      "msrp_usd": 399,
+      "sources": ["https://www.nvidia.com/en-us/geforce/news/geforce-rtx-4060-4060ti/"],
+      "notes": ""
+    },
+    "GeForce RTX 4060 Ti 16 GB": {
+      "release_date": "2023-07",
+      "msrp_usd": 499,
+      "sources": ["https://www.nvidia.com/en-us/geforce/news/geforce-rtx-4060-4060ti/"],
+      "notes": "16 GB variant launched later than 8 GB. Checked manufacturer announcement establishes July, not an exact retail day."
+    },
+    "GeForce RTX 4060 8 GB": {
+      "release_date": "2023-06-29",
+      "msrp_usd": 299,
+      "sources": ["https://www.nvidia.com/en-us/geforce/news/geforce-rtx-4060-available-june-29/"],
+      "notes": "Updated June availability supersedes July in the initial family announcement."
+    },
+    "GeForce RTX 3090 Ti 24 GB": {
+      "release_date": "2022-03-29",
+      "msrp_usd": 1999,
+      "sources": ["https://www.nvidia.com/en-us/geforce/news/geforce-rtx-3090-ti-out-now/"],
+      "notes": ""
+    },
+    "GeForce RTX 3090 24 GB": {
+      "release_date": "2020-09-24",
+      "msrp_usd": 1499,
+      "sources": ["https://www.nvidia.com/en-us/geforce/news/introducing-rtx-30-series-graphics-cards/"],
+      "notes": ""
+    },
+    "GeForce RTX 3080 Ti 12 GB": {
+      "release_date": "2021-06-03",
+      "msrp_usd": 1199,
+      "sources": ["https://www.nvidia.com/en-us/geforce/news/rtx-3080-ti-3070-ti-graphics-cards/"],
+      "notes": ""
+    },
+    "GeForce RTX 3080 10 GB": {
+      "release_date": "2020-09-17",
+      "msrp_usd": 699,
+      "sources": ["https://www.nvidia.com/en-us/geforce/news/introducing-rtx-30-series-graphics-cards/"],
+      "notes": "Original 10 GB model."
+    },
+    "GeForce RTX 3070 Ti 8 GB": {
+      "release_date": "2021-06-10",
+      "msrp_usd": 599,
+      "sources": ["https://www.nvidia.com/en-us/geforce/news/rtx-3080-ti-3070-ti-graphics-cards/"],
+      "notes": ""
+    },
+    "GeForce RTX 3070 8 GB": {
+      "release_date": "2020-10-29",
+      "msrp_usd": 499,
+      "sources": ["https://www.nvidia.com/en-us/geforce/news/geforce-rtx-3070-out-now/"],
+      "notes": ""
+    },
+    "GeForce RTX 3060 Ti 8 GB": {
+      "release_date": "2020-12-02",
+      "msrp_usd": 399,
+      "sources": ["https://www.nvidia.com/en-us/geforce/news/geforce-rtx-3060-ti-out-december-2/"],
+      "notes": ""
+    },
+    "GeForce RTX 3060 12 GB": {
+      "release_date": "2021-02-25",
+      "msrp_usd": 329,
+      "sources": [
+        "https://www.nvidia.com/en-us/geforce/news/geforce-rtx-3060/",
+        "https://www.nvidia.com/en-us/geforce/news/geforce-rtx-3060-out-now/"
+      ],
+      "notes": "Original 12 GB variant."
+    },
+    "GeForce RTX 3050 8 GB": {
+      "release_date": "2022-01-27",
+      "msrp_usd": 249,
+      "sources": ["https://www.nvidia.com/en-us/geforce/news/geforce-rtx-3050-graphics-cards/"],
+      "notes": "8 GB launch, not the later 6 GB model."
+    },
+    "GeForce RTX 3050 6 GB": {
+      "release_date": "2024-02-02",
+      "msrp_usd": 169,
+      "sources": [
+        "https://www.nvidia.com/en-us/geforce/news/rtx-3050-6gb-out-now/",
+        "https://www.pcworld.com/article/2225893/at-169-the-6gb-rtx-3050-might-be-the-new-budget-gpu-king.html"
+      ],
+      "notes": "Separate 6 GB launch. PCWorld's February 2, 2024 announcement coverage explicitly reports a $169 starting price, $80 below the original 8 GB model. NVIDIA's launch article verifies availability but does not state MSRP."
+    },
+    "GeForce RTX 2080 Ti 11 GB": {
+      "release_date": "2018-09",
+      "msrp_usd": 999,
+      "sources": [
+        "https://www.nvidia.com/en-us/geforce/news/geforce-rtx-2080-ti-reviews/",
+        "https://www.nvidia.com/en-us/geforce/news/geforce-rtx-20-series-super-gpus/"
+      ],
+      "notes": "Advertised base starting MSRP, not the premium Founders Edition price. Month-level release only: the checked September 27 roundup says cards have started arriving, but does not establish an exact first retail day."
+    },
+    "GeForce RTX 2080 SUPER 8 GB": {
+      "release_date": "2019-07-23",
+      "msrp_usd": 699,
+      "sources": ["https://www.nvidia.com/en-us/geforce/news/geforce-rtx-20-series-super-gpus/"],
+      "notes": ""
+    },
+    "GeForce RTX 2080 8 GB": {
+      "release_date": "2018-09-20",
+      "msrp_usd": 699,
+      "sources": [
+        "https://en.wikipedia.org/wiki/GeForce_20_series",
+        "https://www.pcgamer.com/nvidia-geforce-rtx-2080-founders-edition-review/"
+      ],
+      "notes": "Base-model MSRP, not $799 Founders Edition. Exact release day and base MSRP checked in the secondary specification table; launch review corroborates the $100 Founders Edition premium."
+    },
+    "GeForce RTX 2070 SUPER 8 GB": {
+      "release_date": "2019-07-09",
+      "msrp_usd": 499,
+      "sources": ["https://www.nvidia.com/en-us/geforce/news/geforce-rtx-20-series-super-gpus/"],
+      "notes": ""
+    },
+    "GeForce RTX 2070 8 GB": {
+      "release_date": "2018-10-17",
+      "msrp_usd": 499,
+      "sources": [
+        "https://www.nvidia.com/en-us/geforce/news/geforce-rtx-2070-reviews/",
+        "https://en.wikipedia.org/wiki/GeForce_20_series"
+      ],
+      "notes": "Base starting MSRP, not the premium Founders Edition. Exact release day checked in secondary specification table; manufacturer roundup verifies price and October availability."
+    },
+    "GeForce RTX 2060 SUPER 8 GB": {
+      "release_date": "2019-07-09",
+      "msrp_usd": 399,
+      "sources": ["https://www.nvidia.com/en-us/geforce/news/geforce-rtx-20-series-super-gpus/"],
+      "notes": ""
+    },
+    "GeForce RTX 2060 12 GB": {
+      "release_date": "2021-12-07",
+      "msrp_usd": null,
+      "sources": ["https://en.wikipedia.org/wiki/GeForce_20_series"],
+      "notes": "12 GB re-release, not the 2019 6 GB card. Date checked only in secondary specification table; original US launch MSRP not verified and not inferred from later retail listings."
+    },
+    "GeForce RTX 2060 6 GB": {
+      "release_date": "2019-01-15",
+      "msrp_usd": 349,
+      "sources": ["https://www.nvidia.com/en-us/geforce/news/nvidia-geforce-rtx-2060/"],
+      "notes": ""
+    },
+    "GeForce GTX 1660 Ti 6 GB": {
+      "release_date": "2019-02-22",
+      "msrp_usd": 279,
+      "sources": ["https://www.nvidia.com/en-us/geforce/news/nvidia-geforce-gtx-1660-ti/"],
+      "notes": ""
+    },
+    "GeForce GTX 1660 SUPER 6 GB": {
+      "release_date": "2019-10-29",
+      "msrp_usd": 229,
+      "sources": [
+        "https://www.nvidia.com/en-us/geforce/news/nvidia-geforce-gtx-1660-super-1650-super/",
+        "https://en.wikipedia.org/wiki/GeForce_16_series"
+      ],
+      "notes": "Exact release day checked in secondary specification table. NVIDIA's shared SUPER article was subsequently updated on November 22; that timestamp is not this model's release date."
+    },
+    "GeForce GTX 1660 6 GB": {
+      "release_date": "2019-03-14",
+      "msrp_usd": 219,
+      "sources": ["https://www.nvidia.com/en-us/geforce/news/nvidia-geforce-gtx-1660/"],
+      "notes": ""
+    },
+    "GeForce GTX 1650 SUPER 4 GB": {
+      "release_date": "2019-11-22",
+      "msrp_usd": 159,
+      "sources": ["https://www.nvidia.com/en-us/geforce/news/nvidia-geforce-gtx-1660-super-1650-super/"],
+      "notes": ""
+    },
+    "GeForce GTX 1650 4 GB": {
+      "release_date": "2019-04-23",
+      "msrp_usd": 149,
+      "sources": [
+        "https://www.techspot.com/review/1835-nvidia-geforce-gtx-1650/",
+        "https://www.tomshardware.com/reviews/intel-arc-a380-review"
+      ],
+      "notes": "Original GDDR5 model; launch review verifies the day, and the comparison table supplies the unrounded $149 launch price."
+    },
+    "GeForce GTX 1080 Ti 11 GB": {
+      "release_date": "2017-03-10",
+      "msrp_usd": 699,
+      "sources": ["https://www.nvidia.com/en-us/geforce/news/nvidia-geforce-gtx-1080-ti/"],
+      "notes": ""
+    },
+    "GeForce GTX 1080 8 GB": {
+      "release_date": "2016-05-27",
+      "msrp_usd": 599,
+      "sources": [
+        "https://www.nvidia.com/en-us/geforce/news/geforce-gtx-1080/",
+        "https://www.nvidia.com/en-us/geforce/news/geforce-gtx-1080-founders-edition/"
+      ],
+      "notes": "Advertised partner-card starting MSRP. Release date is initial Founders Edition availability; premium Founders Edition pricing is not substituted for the base MSRP."
+    },
+    "GeForce GTX 1070 Ti 8 GB": {
+      "release_date": "2017-11-02",
+      "msrp_usd": 449,
+      "sources": ["https://www.nvidia.com/en-us/geforce/news/nvidia-geforce-gtx-1070-ti/"],
+      "notes": ""
+    },
+    "GeForce GTX 1070 8 GB": {
+      "release_date": "2016-06-10",
+      "msrp_usd": 379,
+      "sources": ["https://www.nvidia.com/en-us/geforce/news/geforce-gtx-1070/"],
+      "notes": "Advertised partner-card starting MSRP; Founders Edition was $449."
+    },
+    "GeForce GTX 1060 6 GB": {
+      "release_date": "2016-07-19",
+      "msrp_usd": 249,
+      "sources": ["https://www.nvidia.com/en-us/geforce/news/nvidia-geforce-gtx-1060/"],
+      "notes": "Original 6 GB launch. Partner-card starting MSRP; Founders Edition was $299."
+    },
+    "Radeon RX 9070 XT 16 GB": {
+      "release_date": "2025-03-06",
+      "msrp_usd": 599,
+      "sources": ["https://ir.amd.com/news-events/press-releases/detail/1238"],
+      "notes": "AMD's original US suggested etail price (SEP)."
+    },
+    "Radeon RX 9070 16 GB": {
+      "release_date": "2025-03-06",
+      "msrp_usd": 549,
+      "sources": ["https://ir.amd.com/news-events/press-releases/detail/1238"],
+      "notes": ""
+    },
+    "Radeon RX 9070 GRE 12 GB": {
+      "release_date": "2025-05-08",
+      "msrp_usd": 549,
+      "sources": [
+        "https://www.tomshardware.com/pc-components/gpus/rx-9070-gre-pre-orders-go-live-in-china-may-8-retail-usd575-msrp-and-6-percent-faster-than-the-rx-7900-gre",
+        "https://www.tomshardware.com/pc-components/gpus/amds-formerly-china-exclusive-radeon-rx-9070-gre-goes-global-for-usd549-on-june-2-rdna-4-gpu-will-bridge-the-gap-between-rx-9060-xt-and-rx-9070",
+        "https://www.tomshardware.com/pc-components/gpus/amd-radeon-rx-9070-gre-review"
+      ],
+      "notes": "Release date is original China retail launch, priced at 4,199 RMB. MSRP is the later original US/global launch price of $549 on 2026-06-02, not a conversion of the Chinese launch price. Do not treat 2026 as the original model release year."
+    },
+    "Radeon RX 9060 XT 16 GB": {
+      "release_date": "2025-06-05",
+      "msrp_usd": 349,
+      "sources": [
+        "https://ir.amd.com/news-events/press-releases/detail/1253",
+        "https://www.tomshardware.com/pc-components/gpus/amd-radeon-rx-9060-xt-launches-on-june-5-starting-at-usd299"
+      ],
+      "notes": "16 GB variant; $299 belongs to the 8 GB model."
+    },
+    "Radeon RX 9060 XT 8 GB": {
+      "release_date": "2025-06-05",
+      "msrp_usd": 299,
+      "sources": [
+        "https://ir.amd.com/news-events/press-releases/detail/1253",
+        "https://www.tomshardware.com/pc-components/gpus/amd-radeon-rx-9060-xt-launches-on-june-5-starting-at-usd299"
+      ],
+      "notes": ""
+    },
+    "Radeon RX 9060 8 GB": {
+      "release_date": "2025-08",
+      "msrp_usd": null,
+      "sources": ["https://www.tomshardware.com/pc-components/gpu-drivers/amd-quietly-announces-radeon-rx-9060-alongside-new-adrenalin-driver-new-entry-level-gpu-is-for-select-system-integrators-only"],
+      "notes": "OEM/system-integrator-only introduction. August announcement month verified, but exact first system shipment day and a standalone US launch MSRP were not verified. Not an RX 9060 XT."
+    },
+    "Radeon RX 7900 XTX 24 GB": {
+      "release_date": "2022-12-13",
+      "msrp_usd": 999,
+      "sources": ["https://ir.amd.com/news-events/press-releases/detail/1099"],
+      "notes": ""
+    },
+    "Radeon RX 7900 XT 20 GB": {
+      "release_date": "2022-12-13",
+      "msrp_usd": 899,
+      "sources": ["https://ir.amd.com/news-events/press-releases/detail/1099"],
+      "notes": ""
+    },
+    "Radeon RX 7900 GRE 16 GB": {
+      "release_date": "2023-07-28",
+      "msrp_usd": 549,
+      "sources": [
+        "https://www.tomshardware.com/news/amd-radeon-rx-7900-gre-launch",
+        "https://www.tomshardware.com/pc-components/gpus/amd-radeon-rx-7900-gre-review"
+      ],
+      "notes": "Date is original China introduction. MSRP is the later US standalone retail launch price announced in February 2024, not the $649 quoted in the initial 2023 announcement. These are different regional launch events."
+    },
+    "Radeon RX 7800 XT 16 GB": {
+      "release_date": "2023-09-06",
+      "msrp_usd": 499,
+      "sources": ["https://ir.amd.com/news-events/press-releases/detail/1153"],
+      "notes": ""
+    },
+    "Radeon RX 7700 XT 12 GB": {
+      "release_date": "2023-09-06",
+      "msrp_usd": 449,
+      "sources": ["https://ir.amd.com/news-events/press-releases/detail/1153"],
+      "notes": ""
+    },
+    "Radeon RX 7650 GRE 8 GB": {
+      "release_date": "2025-02-07",
+      "msrp_usd": null,
+      "sources": [
+        "https://www.tomshardware.com/pc-components/gpus/amds-china-specific-rx-7650-gre-slots-in-between-rx-7600-and-7600-xt",
+        "https://videocardz.com/newz/amd-introduces-radeon-rx-7650-gre-with-8gb-vram-china-exclusive-gpu"
+      ],
+      "notes": "China-specific launch; no US MSRP verified. Launch price reported as 2,049 yuan by Tom's Hardware and the VideoCardz article body. VideoCardz's table instead says 2,099 RMB, an internal inconsistency. No yuan-to-dollar conversion is used as MSRP."
+    },
+    "Radeon RX 7600 XT 16 GB": {
+      "release_date": "2024-01-24",
+      "msrp_usd": 329,
+      "sources": ["https://ir.amd.com/news-events/press-releases/detail/1176"],
+      "notes": ""
+    },
+    "Radeon RX 7600 8 GB": {
+      "release_date": "2023-05-25",
+      "msrp_usd": 269,
+      "sources": ["https://ir.amd.com/news-events/press-releases/detail/1133"],
+      "notes": ""
+    },
+    "Radeon RX 6950 XT 16 GB": {
+      "release_date": "2022-05-10",
+      "msrp_usd": 1099,
+      "sources": ["https://ir.amd.com/news-events/press-releases/detail/1064"],
+      "notes": ""
+    },
+    "Radeon RX 6900 XT 16 GB": {
+      "release_date": "2020-12-08",
+      "msrp_usd": 999,
+      "sources": ["https://ir.amd.com/news-events/press-releases/detail/978"],
+      "notes": ""
+    },
+    "Radeon RX 6800 XT 16 GB": {
+      "release_date": "2020-11-18",
+      "msrp_usd": 649,
+      "sources": ["https://ir.amd.com/news-events/press-releases/detail/978"],
+      "notes": ""
+    },
+    "Radeon RX 6800 16 GB": {
+      "release_date": "2020-11-18",
+      "msrp_usd": 579,
+      "sources": ["https://ir.amd.com/news-events/press-releases/detail/978"],
+      "notes": ""
+    },
+    "Radeon RX 6750 XT 12 GB": {
+      "release_date": "2022-05-10",
+      "msrp_usd": 549,
+      "sources": ["https://ir.amd.com/news-events/press-releases/detail/1064"],
+      "notes": ""
+    },
+    "Radeon RX 6700 XT 12 GB": {
+      "release_date": "2021-03-18",
+      "msrp_usd": 479,
+      "sources": ["https://ir.amd.com/news-events/press-releases/detail/990"],
+      "notes": ""
+    },
+    "Radeon RX 6650 XT 8 GB": {
+      "release_date": "2022-05-10",
+      "msrp_usd": 399,
+      "sources": ["https://ir.amd.com/news-events/press-releases/detail/1064"],
+      "notes": ""
+    },
+    "Radeon RX 6600 XT 8 GB": {
+      "release_date": "2021-08-11",
+      "msrp_usd": 379,
+      "sources": ["https://ir.amd.com/news-events/press-releases/detail/1015"],
+      "notes": ""
+    },
+    "Radeon RX 6600 8 GB": {
+      "release_date": "2021-10-13",
+      "msrp_usd": 329,
+      "sources": ["https://ir.amd.com/news-events/press-releases/detail/1023"],
+      "notes": ""
+    },
+    "Radeon RX 6500 XT 4 GB": {
+      "release_date": "2022-01",
+      "msrp_usd": 199,
+      "sources": ["https://www.tomshardware.com/reviews/intel-arc-a380-review"],
+      "notes": "Launch month and original price checked in the review's GPU comparison table; exact first retail day not independently verified."
+    },
+    "Radeon RX 6400 4 GB": {
+      "release_date": "2022-01",
+      "msrp_usd": 159,
+      "sources": ["https://www.tomshardware.com/reviews/intel-arc-a380-review"],
+      "notes": "Comparison table records initial launch month and $159 standalone launch price. Original OEM introduction and subsequent standalone retail availability are not the same event; exact dates were not independently verified."
+    },
+    "Radeon RX 5700 XT 8 GB": {
+      "release_date": "2019-07-07",
+      "msrp_usd": 399,
+      "sources": ["https://ir.amd.com/news-events/press-releases/detail/899"],
+      "notes": "Standard model's actual launch-day SEP, not the more expensive anniversary edition."
+    },
+    "Radeon RX 5700 8 GB": {
+      "release_date": "2019-07-07",
+      "msrp_usd": 349,
+      "sources": ["https://ir.amd.com/news-events/press-releases/detail/899"],
+      "notes": "Actual launch SEP after the pre-release price reduction."
+    },
+    "Radeon RX 5600 XT 6 GB": {
+      "release_date": "2020-01-21",
+      "msrp_usd": 279,
+      "sources": ["https://ir.amd.com/news-events/press-releases/detail/925"],
+      "notes": ""
+    },
+    "Radeon RX 5500 XT 8 GB": {
+      "release_date": "2019-12-12",
+      "msrp_usd": 199,
+      "sources": [
+        "https://ir.amd.com/news-events/press-releases/detail/921",
+        "https://videocardz.com/newz/amd-radeon-rx-5500-xt-to-launch-at-169-usd-4gb-and-199-usd-8gb"
+      ],
+      "notes": "8 GB-specific launch MSRP; manufacturer family announcement's $169 starting price belongs to the 4 GB model."
+    },
+    "Radeon RX 590 8 GB": {
+      "release_date": "2018-11-15",
+      "msrp_usd": 279,
+      "sources": ["https://ir.amd.com/news-events/press-releases/detail/864"],
+      "notes": ""
+    },
+    "Radeon RX 580 8 GB": {
+      "release_date": "2017-04-18",
+      "msrp_usd": 229,
+      "sources": ["https://ir.amd.com/news-events/press-releases/detail/763"],
+      "notes": "8 GB-specific launch SEP; $199 was the 4 GB model."
+    },
+    "Intel Arc B580 12 GB": {
+      "release_date": "2024-12-13",
+      "msrp_usd": 249,
+      "sources": ["https://www.intel.com/content/www/us/en/newsroom/news/intel-launches-arc-b-series-graphics-cards.html"],
+      "notes": ""
+    },
+    "Intel Arc B570 10 GB": {
+      "release_date": "2025-01-16",
+      "msrp_usd": 219,
+      "sources": ["https://www.intel.com/content/www/us/en/newsroom/news/intel-launches-arc-b-series-graphics-cards.html"],
+      "notes": ""
+    },
+    "Intel Arc A770 16 GB": {
+      "release_date": "2022-10-12",
+      "msrp_usd": 349,
+      "sources": [
+        "https://game.intel.com/stories/intel-arc-graphics-a7series-perf-per-dollar/",
+        "https://game.intel.com/stories/intel-arc-graphics-release/"
+      ],
+      "notes": "16 GB Limited Edition launch price, not the $329 8 GB partner model."
+    },
+    "Intel Arc A770 8 GB": {
+      "release_date": null,
+      "msrp_usd": 329,
+      "sources": ["https://game.intel.com/stories/intel-arc-graphics-a7series-perf-per-dollar/"],
+      "notes": "Intel's announcement explicitly assigns October 12 to A750 and A770 16 GB Limited Edition, but says 8 GB partner models arrive in the coming weeks. Exact first retail date for this variant not verified; the 16 GB date is not copied."
+    },
+    "Intel Arc A750 8 GB": {
+      "release_date": "2022-10-12",
+      "msrp_usd": 289,
+      "sources": [
+        "https://game.intel.com/stories/intel-arc-graphics-a7series-perf-per-dollar/",
+        "https://game.intel.com/stories/intel-arc-graphics-release/"
+      ],
+      "notes": "Original launch MSRP, not the later $249 price."
+    },
+    "Intel Arc A580 8 GB": {
+      "release_date": "2023-10-10",
+      "msrp_usd": 179,
+      "sources": [
+        "https://en.wikipedia.org/wiki/Intel_Arc",
+        "https://game.intel.com/stories/intel-arc-graphics-a580-release-announcement/"
+      ],
+      "notes": "Date and MSRP checked only in the secondary specification table. Intel's migrated announcement corroborates the product launch but displays a conflicting December 10 publication timestamp and does not state MSRP; these fields have weaker verification than the primary-sourced entries."
+    },
+    "Intel Arc A380 6 GB": {
+      "release_date": "2022-06",
+      "msrp_usd": 139,
+      "sources": ["https://www.tomshardware.com/reviews/intel-arc-a380-review"],
+      "notes": "Original launch month from the review's table. $139 is the later US launch price explicitly reported by the review, not a conversion of the initial Chinese price. Exact first regional retail day not independently verified."
+    },
+    "Intel Arc A310 4 GB": {
+      "release_date": null,
+      "msrp_usd": null,
+      "sources": [],
+      "notes": "No sufficiently reliable release date or original US launch MSRP verified in this bounded research. Intentionally unresolved; no price inferred from later board listings or another Arc model."
+    }
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "description": "Recognition-only catalogue for common out-of-scope GPUs. These names prevent false description fallbacks and identify mixed-card bundles; they are not added to deal analysis.",
+  "families": [
+    {
+      "name": "GeForce GTX",
+      "brand": "NVIDIA",
+      "prefixes": ["NVIDIA GeForce GTX", "GeForce GTX", "NVIDIA GTX", "GTX"],
+      "models": ["1050 Ti", "1050", "980 Ti", "980", "970", "960", "950", "780 Ti", "780", "770", "760", "750 Ti", "750", "745", "690", "680", "670", "660 Ti", "660", "650 Ti", "650", "645", "590", "580", "570", "560 Ti", "560", "550 Ti", "480", "470", "465", "460", "295", "285", "280", "275", "260", "980M", "970M", "960M", "950M", "880M", "870M", "860M"]
+    },
+    {
+      "name": "GeForce GT",
+      "brand": "NVIDIA",
+      "prefixes": ["NVIDIA GeForce GT", "GeForce GT", "NVIDIA GT", "GT"],
+      "models": ["1030", "1010", "740", "730", "720", "710", "705", "640", "630", "620", "610", "520", "440", "430", "240", "220", "210"]
+    },
+    {
+      "name": "GeForce GTS",
+      "brand": "NVIDIA",
+      "prefixes": ["NVIDIA GeForce GTS", "GeForce GTS", "NVIDIA GTS", "GTS"],
+      "models": ["450", "250"]
+    },
+    {
+      "name": "NVIDIA TITAN",
+      "brand": "NVIDIA",
+      "prefixes": ["NVIDIA TITAN", "GeForce GTX TITAN", "GTX TITAN", "TITAN"],
+      "models": ["RTX", "Black", "Xp", "X", "V", "Z"]
+    },
+    {
+      "name": "NVIDIA TITAN",
+      "brand": "NVIDIA",
+      "prefixes": ["NVIDIA TITAN", "GeForce GTX TITAN", "GTX TITAN"],
+      "models": [""]
+    },
+    {
+      "name": "NVIDIA Quadro",
+      "brand": "NVIDIA",
+      "prefixes": ["NVIDIA Quadro", "Quadro"],
+      "models": [""]
+    },
+    {
+      "name": "NVIDIA RTX A",
+      "brand": "NVIDIA",
+      "prefixes": ["NVIDIA RTX A", "RTX A"],
+      "models": ["6000", "5500", "5000", "4500", "4000", "2000", "1000", "400"]
+    },
+    {
+      "name": "Radeon RX",
+      "brand": "AMD",
+      "prefixes": ["AMD Radeon RX", "Radeon RX", "AMD RX", "RX"],
+      "models": ["570", "560", "550", "480", "470", "460"]
+    },
+    {
+      "name": "Radeon RX Mobile",
+      "brand": "AMD",
+      "prefixes": ["AMD Radeon RX", "Radeon RX", "AMD RX", "RX"],
+      "models": ["7900M", "7600M XT", "7600M", "6850M XT", "6800M", "6700M", "6650M XT", "6650M", "6600M", "6500M", "6300M"]
+    },
+    {
+      "name": "Radeon R9",
+      "brand": "AMD",
+      "prefixes": ["AMD Radeon R9", "Radeon R9", "AMD R9", "R9"],
+      "models": ["Fury X", "Fury", "Nano", "390X", "390", "380X", "380", "295X2", "290X", "290", "285", "280X", "280", "270X", "270"]
+    },
+    {
+      "name": "Radeon R7",
+      "brand": "AMD",
+      "prefixes": ["AMD Radeon R7", "Radeon R7", "AMD R7", "R7"],
+      "models": ["370", "360", "350", "265", "260X", "260", "250X", "250", "240"]
+    },
+    {
+      "name": "Radeon Vega",
+      "brand": "AMD",
+      "prefixes": ["AMD Radeon RX Vega", "Radeon RX Vega", "Radeon Vega", "RX Vega", "Vega"],
+      "models": ["64", "56", "Frontier Edition"]
+    },
+    {
+      "name": "Radeon",
+      "brand": "AMD",
+      "prefixes": ["ATI All-In-Wonder Radeon", "All-In-Wonder Radeon", "ATI Radeon", "Radeon"],
+      "models": ["X1950 XTX", "X1950 XT", "X1900 XTX", "X1900 XT", "X1800 XT", "9800 XT", "9800 Pro", "9800", "9700 Pro", "9700", "9600 XT", "9600 Pro", "9600", "9500 Pro", "9500", "9200", "9100", "9000"]
+    },
+    {
+      "name": "Radeon HD",
+      "brand": "AMD",
+      "prefixes": ["AMD Radeon HD", "ATI Radeon HD", "Radeon HD", "AMD HD", "ATI HD", "HD"],
+      "models": ["7990", "7970", "7950", "7870", "7850", "7790", "7770", "7750", "6990", "6970", "6950", "6870", "6850", "6790", "6770", "6750", "6670", "6570", "6450", "5970", "5870", "5850", "5830", "5770", "5750", "5670", "5570", "5450", "4870", "4850", "4890"]
+    },
+    {
+      "name": "Radeon Pro",
+      "brand": "AMD",
+      "prefixes": ["AMD Radeon Pro", "Radeon Pro", "Radeon AI Pro"],
+      "models": [""]
+    },
+    {
+      "name": "Radeon VII",
+      "brand": "AMD",
+      "prefixes": ["AMD Radeon VII", "Radeon VII"],
+      "models": [""]
+    },
+    {
+      "name": "Intel Iris Xe",
+      "brand": "Intel",
+      "prefixes": ["Intel Iris Xe", "Iris Xe"],
+      "models": [""]
+    }
+  ]
+}

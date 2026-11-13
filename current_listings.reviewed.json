@@ -1,0 +1,742 @@
+{
+  "captured_at": "2026-11-12",
+  "source": "finn.no",
+  "sampling": "One random listing per matcher-predicted model plus bounded Unknown/Multi samples; independently labeled, not representative of the full market.",
+  "description_policy": "Only GPU-relevant excerpts retained where needed for fallback.",
+  "cases": [
+    {
+      "ad_id": "475328890",
+      "expected_model": "GeForce GTX 1060 6 GB",
+      "title": "Grafikkort gtx1060 armor 6g ocv1"
+    },
+    {
+      "ad_id": "472020908",
+      "expected_model": "GeForce GTX 1070 8 GB",
+      "title": "ASUS ROG Strix GeForce GTX 1070 8GB"
+    },
+    {
+      "ad_id": "479837143",
+      "expected_model": "GeForce GTX 1070 Ti 8 GB",
+      "title": "ASUS ROG STRIX GeForce GTX 1070 Ti 8 GB"
+    },
+    {
+      "ad_id": "477846455",
+      "expected_model": "GeForce GTX 1080 8 GB",
+      "title": "Gigabyte GeForce GTX 1080 Windforce OC 8GB skjermkort"
+    },
+    {
+      "ad_id": "469283996",
+      "expected_model": "GeForce GTX 1080 Ti 11 GB",
+      "title": "Gigabyte Aorus extreme 1080ti 11gb"
+    },
+    {
+      "ad_id": "470051831",
+      "expected_model": "GeForce GTX 1650 4 GB",
+      "title": "Nvidia 1650 skjermkort + 500w strømforsyning selges"
+    },
+    {
+      "ad_id": "478197308",
+      "expected_model": "GeForce GTX 1660 6 GB",
+      "title": "Palit GeForce GTX 1660 Skjermkort (frakt inklud.)"
+    },
+    {
+      "ad_id": "480293520",
+      "expected_model": "GeForce GTX 1660 SUPER 6 GB",
+      "title": "MSI GeForce GTX 1660 SUPER VENTUS OC 6GB – I utmerket stand"
+    },
+    {
+      "ad_id": "478919159",
+      "expected_model": "GeForce RTX 2060 6 GB",
+      "title": "Gainward GeForce RTX 2060 skjermkort med to vifter"
+    },
+    {
+      "ad_id": "477524686",
+      "expected_model": "GeForce RTX 2060 SUPER 8 GB",
+      "title": "Gigabyte GeForce RTX2060 super windforce 8G skjermkort"
+    },
+    {
+      "ad_id": "478011237",
+      "expected_model": "GeForce RTX 2070 8 GB",
+      "title": "ASUS GeForce RTX 2070"
+    },
+    {
+      "ad_id": "478732182",
+      "expected_model": "GeForce RTX 2070 SUPER 8 GB",
+      "title": "MSI GeForce RTX 2070 Super Ventus OC grafikkort 8G"
+    },
+    {
+      "ad_id": "472499955",
+      "expected_model": "GeForce RTX 2080 8 GB",
+      "title": "RTX2080 med vannkjøling og 240mm radiator"
+    },
+    {
+      "ad_id": "476001218",
+      "expected_model": "GeForce RTX 2080 SUPER 8 GB",
+      "title": "Asus ROG Strix GeForce RTX 2080 super"
+    },
+    {
+      "ad_id": "470990384",
+      "expected_model": "GeForce RTX 2080 Ti 11 GB",
+      "title": "MSI Rtx 2080 ti duke med EKWB vannblokk og backplate"
+    },
+    {
+      "ad_id": "480726392",
+      "expected_model": "GeForce RTX 3050 6 GB",
+      "title": "NVIDIA GeForce RTX 3050 6 GB"
+    },
+    {
+      "ad_id": "478351775",
+      "expected_model": "GeForce RTX 3050 6 GB",
+      "title": "ASUS Dual GeForce RTX 3050 OC 6GB grafikkkort"
+    },
+    {
+      "ad_id": "478311783",
+      "expected_model": "GeForce RTX 3060 12 GB",
+      "title": "EVGA GeForce RTX 3060 XC GAMING 12GB"
+    },
+    {
+      "ad_id": "408911099",
+      "expected_model": "GeForce RTX 3060 Ti 8 GB",
+      "title": "Asus Rtx 3060 Ti OC Edition"
+    },
+    {
+      "ad_id": "480802251",
+      "expected_model": "GeForce RTX 3070 8 GB",
+      "title": "Pent brukt ASUS GeForce RTX 3070 TUF OC V2 selges"
+    },
+    {
+      "ad_id": "473204215",
+      "expected_model": "GeForce RTX 3070 Ti 8 GB",
+      "title": "RTX 3070TI Palit GamingPro - Reservert"
+    },
+    {
+      "ad_id": "479918981",
+      "expected_model": "GeForce RTX 3080 10 GB",
+      "title": "MSI RTX 3080 Ventus 10 GB – Alphacool Eiswolf med radiator – testet"
+    },
+    {
+      "ad_id": "480750298",
+      "expected_model": "GeForce RTX 3080 Ti 12 GB",
+      "title": "TUF Gaming GeForce RTX 3080 Ti OC Edition 12GB GDDR6X"
+    },
+    {
+      "ad_id": "478126714",
+      "expected_model": "GeForce RTX 4060 8 GB",
+      "title": "GeForce RTX 4060 ventus 2x BLACK 8gb OC"
+    },
+    {
+      "ad_id": "480113209",
+      "expected_model": "GeForce RTX 4060 Ti 8 GB",
+      "title": "MSI RTX 4060 Ti VENTUS 2X 8GB"
+    },
+    {
+      "ad_id": "480344789",
+      "expected_model": "GeForce RTX 4070 12 GB",
+      "title": "ASUS TUF Gaming GeForce RTX 4070 OC 12GB"
+    },
+    {
+      "ad_id": "473450635",
+      "expected_model": "GeForce RTX 4070 Ti 12 GB",
+      "title": "Selger mitt Asus 4070ti 12gb PROART OC skjermkort"
+    },
+    {
+      "ad_id": "480622957",
+      "expected_model": "GeForce RTX 5050 8 GB",
+      "title": "Gigabyte GeForce RTX 5050"
+    },
+    {
+      "ad_id": "480452627",
+      "expected_model": "GeForce RTX 5060 8 GB",
+      "title": "ASUS GeForce RTX 5060 8GB skjermkort"
+    },
+    {
+      "ad_id": "478526400",
+      "expected_model": "GeForce RTX 5060 Ti 8 GB",
+      "title": "Nytt MSI GeForce RTX 5060 Ti Ventus 2X 8GB skjermkort"
+    },
+    {
+      "ad_id": "480704289",
+      "expected_model": "GeForce RTX 5060 Ti 8 GB",
+      "title": "nvidia gigabyte 5060 ti 8 gb"
+    },
+    {
+      "ad_id": "478184463",
+      "expected_model": "GeForce RTX 5070 12 GB",
+      "title": "MSI GeForce RTX 5070 Ventus 2X skjermkort (BYTTES ELLER SELGES)"
+    },
+    {
+      "ad_id": "480795433",
+      "expected_model": "Intel Arc A770 16 GB",
+      "title": "Intel Arc A770 16GB – Sparkle Titan OC"
+    },
+    {
+      "ad_id": "480405518",
+      "expected_model": "Intel Arc B570 10 GB",
+      "title": "Sparkle Intel Arc B570, 10GB skjermkort"
+    },
+    {
+      "ad_id": "480361881",
+      "expected_model": "Intel Arc B580 12 GB",
+      "title": "Intel arc B580 12gb"
+    },
+    {
+      "ad_id": "474476932",
+      "expected_model": "Radeon RX 5600 XT 6 GB",
+      "title": "5 stk Gigabyte Radeon RX 5600 XT Gaming OC 6GB skjermkort"
+    },
+    {
+      "ad_id": "480009028",
+      "expected_model": "Radeon RX 5700 8 GB",
+      "title": "ASUS & XFX Radeon RX 5700 8GB – Referanse / Låge temp / Testa 100% OK"
+    },
+    {
+      "ad_id": "480046005",
+      "expected_model": "Radeon RX 5700 XT 8 GB",
+      "title": "Sapphire Nitro+ Radeon RX 5700 XT 8GB – Toppmodellen / Iskald og stillegåande"
+    },
+    {
+      "ad_id": "466490857",
+      "expected_model": "Radeon RX 580 8 GB",
+      "title": "Sapphire Pulse Radeon RX 580 skjermkort. 8Gb"
+    },
+    {
+      "ad_id": "457836082",
+      "expected_model": "Radeon RX 590 8 GB",
+      "title": "AMD RX 590 8gb"
+    },
+    {
+      "ad_id": "469848204",
+      "expected_model": "Radeon RX 6500 XT 4 GB",
+      "title": "ASUS Radeon RX 6500 XT Skjermkort"
+    },
+    {
+      "ad_id": "480112545",
+      "expected_model": "Radeon RX 6600 8 GB",
+      "title": "XFX Speedster SWIFT 210 RX 6600 8GB"
+    },
+    {
+      "ad_id": "477312042",
+      "expected_model": "Radeon RX 6600 XT 8 GB",
+      "title": "XFX Speedster QICK 308 Radeon RX 6600 XT 8GB GDDR6"
+    },
+    {
+      "ad_id": "478276158",
+      "expected_model": "Radeon RX 6650 XT 8 GB",
+      "title": "RX 6650 XT skjermkort"
+    },
+    {
+      "ad_id": "480587166",
+      "expected_model": "Radeon RX 6700 XT 12 GB",
+      "title": "XFX Speedster MERC 319 Radeon RX 6700 XT skjermkort"
+    },
+    {
+      "ad_id": "480554197",
+      "expected_model": "Radeon RX 6750 XT 12 GB",
+      "title": "Radeon RX 6750 XT 12 GB grafikkort - Pent brukt, som ny!"
+    },
+    {
+      "ad_id": "480512562",
+      "expected_model": "Radeon RX 6800 16 GB",
+      "title": "MSI Radeon RX 6800 Gaming X Trio 16GB"
+    },
+    {
+      "ad_id": "478311260",
+      "expected_model": "Radeon RX 6950 XT 16 GB",
+      "title": "XFX Radeon RX 6950 XT 16GB"
+    },
+    {
+      "ad_id": "458877782",
+      "expected_model": "Radeon RX 7600 8 GB",
+      "title": "XFX AMD Radeon RX 7600 SPEEDSTER SWFT"
+    },
+    {
+      "ad_id": "480481892",
+      "expected_model": "Radeon RX 7600 XT 16 GB",
+      "title": "RX 7600 XT 16GB + Kingston FURY Beast RGB 32 GB DDR5-5600 2x16GB CL40"
+    },
+    {
+      "ad_id": "469634527",
+      "expected_model": "Radeon RX 7700 XT 12 GB",
+      "title": "Sapphire Pulse AMD Radeon RX 7700 XT skjermkort 12GB"
+    },
+    {
+      "ad_id": "479378924",
+      "expected_model": "Radeon RX 7800 XT 16 GB",
+      "title": "Bytte/Salg: ASUS TUF Radeon RX 7800 XT OC 16GB (Ønsker Nvidia / Oppgradering)"
+    },
+    {
+      "ad_id": "480486713",
+      "expected_model": "Radeon RX 7900 XT 20 GB",
+      "title": "GIGABYTE RX 7900 XT 20GB"
+    },
+    {
+      "ad_id": "480047359",
+      "expected_model": "Radeon RX 9060 XT 16 GB",
+      "title": "Lite brukt Powercolor reaper 9060 xt 16Gb til salgs"
+    },
+    {
+      "ad_id": "471076958",
+      "expected_model": "Radeon RX 9070 XT 16 GB",
+      "title": "Rx 9070 xt selges/byttes"
+    },
+    {
+      "ad_id": "480157991",
+      "expected_model": "Unknown",
+      "title": "RTX A4000 16GB (NVIDIA) {Ray-Tracing}"
+    },
+    {
+      "ad_id": "480794296",
+      "expected_model": "Unknown",
+      "title": "Onexgpu RX 7600m XT"
+    },
+    {
+      "ad_id": "480259362",
+      "expected_model": "GeForce GTX 1660 SUPER 6 GB",
+      "title": "Skjermkort",
+      "description": "Colorful GeForce GTX 1660 SUPER 6GB"
+    },
+    {
+      "ad_id": "470020056",
+      "expected_model": "Unknown",
+      "title": "MSI R9 290X 8GB Gaming skjermkort"
+    },
+    {
+      "ad_id": "470455441",
+      "expected_model": "Unknown",
+      "title": "ASUS TUF GeForce RTX skjermkort",
+      "description": "ASUS TUF GeForce RTX skjermkort med tre vifter og stor kjøler."
+    },
+    {
+      "ad_id": "478531166",
+      "expected_model": "Unknown",
+      "title": "ATI All-In-Wonder Radeon 9700 Pro 128MB –  nytt! Samlerobjekt"
+    },
+    {
+      "ad_id": "472655087",
+      "expected_model": "Unknown",
+      "title": "Nvidia GeForce GTX Titan X skjermkort 12gb vram"
+    },
+    {
+      "ad_id": "470325751",
+      "expected_model": "Multi",
+      "title": "Skjermkort",
+      "description": "Asus RTX 3050 8gb\nAsus RTX 2060 6gb\nAsus GTX 1060 6gb"
+    },
+    {
+      "ad_id": "480753989",
+      "expected_model": "Unknown",
+      "title": "NVIDIA RTX A2000 12GB 2 slot LP perfect for en mini maskin"
+    },
+    {
+      "ad_id": "471113132",
+      "expected_model": "Multi",
+      "title": "GTX 1070 og 1070ti selges"
+    },
+    {
+      "ad_id": "470757291",
+      "expected_model": "Multi",
+      "title": "Ønsker å bytte mitt 9070XT mot 5070TI"
+    }
+  ],
+  "review": {
+    "exported_at": "2026-11-12T11:24:31.084Z",
+    "decisions": {
+      "408911099": {
+        "status": "approved",
+        "label": "GeForce RTX 3060 Ti 8 GB",
+        "notes": "",
+        "updated_at": "2026-11-12T11:14:27.368Z"
+      },
+      "457836082": {
+        "status": "approved",
+        "label": "Radeon RX 590 8 GB",
+        "notes": "",
+        "updated_at": "2026-11-12T11:15:47.938Z"
+      },
+      "458877782": {
+        "status": "approved",
+        "label": "Radeon RX 7600 8 GB",
+        "notes": "",
+        "updated_at": "2026-11-12T11:16:04.546Z"
+      },
+      "466490857": {
+        "status": "approved",
+        "label": "Radeon RX 580 8 GB",
+        "notes": "",
+        "updated_at": "2026-11-12T11:15:46.936Z"
+      },
+      "469283996": {
+        "status": "approved",
+        "label": "GeForce GTX 1080 Ti 11 GB",
+        "notes": "",
+        "updated_at": "2026-11-12T11:13:38.840Z"
+      },
+      "469634527": {
+        "status": "approved",
+        "label": "Radeon RX 7700 XT 12 GB",
+        "notes": "",
+        "updated_at": "2026-11-12T11:16:10.188Z"
+      },
+      "469848204": {
+        "status": "approved",
+        "label": "Radeon RX 6500 XT 4 GB",
+        "notes": "",
+        "updated_at": "2026-11-12T11:15:50.459Z"
+      },
+      "470020056": {
+        "status": "approved",
+        "label": "Unknown",
+        "notes": "14 year old card. Fine to ignore.",
+        "updated_at": "2026-11-12T11:19:20.495Z"
+      },
+      "470051831": {
+        "status": "approved",
+        "label": "GeForce GTX 1650 4 GB",
+        "notes": "",
+        "updated_at": "2026-11-12T11:13:41.600Z"
+      },
+      "470325751": {
+        "status": "approved",
+        "label": "Multi",
+        "notes": "Multi is fine for now. Could look into extracting these later.",
+        "updated_at": "2026-11-12T11:22:49.826Z"
+      },
+      "470455441": {
+        "status": "approved",
+        "label": "Unknown",
+        "notes": "Impossible to discern from title or description. Fine to ignore.",
+        "updated_at": "2026-11-12T11:21:26.814Z"
+      },
+      "470757291": {
+        "status": "approved",
+        "label": "Multi",
+        "notes": "",
+        "updated_at": "2026-11-12T11:24:26.275Z"
+      },
+      "470990384": {
+        "status": "approved",
+        "label": "GeForce RTX 2080 Ti 11 GB",
+        "notes": "",
+        "updated_at": "2026-11-12T11:14:06.293Z"
+      },
+      "471076958": {
+        "status": "approved",
+        "label": "Radeon RX 9070 XT 16 GB",
+        "notes": "",
+        "updated_at": "2026-11-12T11:16:18.068Z"
+      },
+      "471113132": {
+        "status": "approved",
+        "label": "Multi",
+        "notes": "",
+        "updated_at": "2026-11-12T11:24:14.012Z"
+      },
+      "472020908": {
+        "status": "approved",
+        "label": "GeForce GTX 1070 8 GB",
+        "notes": "",
+        "updated_at": "2026-11-12T11:13:33.518Z"
+      },
+      "472499955": {
+        "status": "approved",
+        "label": "GeForce RTX 2080 8 GB",
+        "notes": "",
+        "updated_at": "2026-11-12T11:13:57.364Z"
+      },
+      "472655087": {
+        "status": "approved",
+        "label": "Unknown",
+        "notes": "Old and not consumer. Fine to ignore.",
+        "updated_at": "2026-11-12T11:22:00.126Z"
+      },
+      "473204215": {
+        "status": "approved",
+        "label": "GeForce RTX 3070 Ti 8 GB",
+        "notes": "",
+        "updated_at": "2026-11-12T11:14:30.934Z"
+      },
+      "473450635": {
+        "status": "approved",
+        "label": "GeForce RTX 4070 Ti 12 GB",
+        "notes": "",
+        "updated_at": "2026-11-12T11:14:44.850Z"
+      },
+      "474476932": {
+        "status": "approved",
+        "label": "Radeon RX 5600 XT 6 GB",
+        "notes": "",
+        "updated_at": "2026-11-12T11:15:24.192Z"
+      },
+      "475328890": {
+        "status": "approved",
+        "label": "GeForce GTX 1060 6 GB",
+        "notes": "",
+        "updated_at": "2026-11-12T11:13:29.905Z"
+      },
+      "476001218": {
+        "status": "approved",
+        "label": "GeForce RTX 2080 SUPER 8 GB",
+        "notes": "",
+        "updated_at": "2026-11-12T11:13:58.581Z"
+      },
+      "477312042": {
+        "status": "approved",
+        "label": "Radeon RX 6600 XT 8 GB",
+        "notes": "",
+        "updated_at": "2026-11-12T11:15:55.859Z"
+      },
+      "477524686": {
+        "status": "approved",
+        "label": "GeForce RTX 2060 SUPER 8 GB",
+        "notes": "",
+        "updated_at": "2026-11-12T11:13:52.393Z"
+      },
+      "477846455": {
+        "status": "approved",
+        "label": "GeForce GTX 1080 8 GB",
+        "notes": "",
+        "updated_at": "2026-11-12T11:13:37.447Z"
+      },
+      "478011237": {
+        "status": "approved",
+        "label": "GeForce RTX 2070 8 GB",
+        "notes": "",
+        "updated_at": "2026-11-12T11:13:53.678Z"
+      },
+      "478126714": {
+        "status": "approved",
+        "label": "GeForce RTX 4060 8 GB",
+        "notes": "",
+        "updated_at": "2026-11-12T11:14:38.530Z"
+      },
+      "478184463": {
+        "status": "approved",
+        "label": "GeForce RTX 5070 12 GB",
+        "notes": "",
+        "updated_at": "2026-11-12T11:15:13.593Z"
+      },
+      "478197308": {
+        "status": "approved",
+        "label": "GeForce GTX 1660 6 GB",
+        "notes": "",
+        "updated_at": "2026-11-12T11:13:44.190Z"
+      },
+      "478276158": {
+        "status": "approved",
+        "label": "Radeon RX 6650 XT 8 GB",
+        "notes": "",
+        "updated_at": "2026-11-12T11:15:57.439Z"
+      },
+      "478311260": {
+        "status": "approved",
+        "label": "Radeon RX 6950 XT 16 GB",
+        "notes": "",
+        "updated_at": "2026-11-12T11:16:03.539Z"
+      },
+      "478311783": {
+        "status": "approved",
+        "label": "GeForce RTX 3060 12 GB",
+        "notes": "",
+        "updated_at": "2026-11-12T11:14:09.122Z"
+      },
+      "478351775": {
+        "status": "approved",
+        "label": "GeForce RTX 3050 6 GB",
+        "notes": "",
+        "updated_at": "2026-11-12T11:13:07.437Z"
+      },
+      "478526400": {
+        "status": "approved",
+        "label": "GeForce RTX 5060 Ti 8 GB",
+        "notes": "",
+        "updated_at": "2026-11-12T11:13:26.524Z"
+      },
+      "478531166": {
+        "status": "approved",
+        "label": "Unknown",
+        "notes": "25 years old! Fine to ignore.",
+        "updated_at": "2026-11-12T11:21:46.849Z"
+      },
+      "478732182": {
+        "status": "approved",
+        "label": "GeForce RTX 2070 SUPER 8 GB",
+        "notes": "",
+        "updated_at": "2026-11-12T11:13:55.554Z"
+      },
+      "478919159": {
+        "status": "approved",
+        "label": "GeForce RTX 2060 6 GB",
+        "notes": "",
+        "updated_at": "2026-11-12T11:13:48.038Z"
+      },
+      "479378924": {
+        "status": "approved",
+        "label": "Radeon RX 7800 XT 16 GB",
+        "notes": "",
+        "updated_at": "2026-11-12T11:16:12.305Z"
+      },
+      "479837143": {
+        "status": "approved",
+        "label": "GeForce GTX 1070 Ti 8 GB",
+        "notes": "",
+        "updated_at": "2026-11-12T11:13:35.576Z"
+      },
+      "479918981": {
+        "status": "approved",
+        "label": "GeForce RTX 3080 10 GB",
+        "notes": "",
+        "updated_at": "2026-11-12T11:14:33.343Z"
+      },
+      "480009028": {
+        "status": "approved",
+        "label": "Radeon RX 5700 8 GB",
+        "notes": "",
+        "updated_at": "2026-11-12T11:15:30.504Z"
+      },
+      "480046005": {
+        "status": "approved",
+        "label": "Radeon RX 5700 XT 8 GB",
+        "notes": "",
+        "updated_at": "2026-11-12T11:15:32.816Z"
+      },
+      "480047359": {
+        "status": "approved",
+        "label": "Radeon RX 9060 XT 16 GB",
+        "notes": "",
+        "updated_at": "2026-11-12T11:16:16.379Z"
+      },
+      "480112545": {
+        "status": "approved",
+        "label": "Radeon RX 6600 8 GB",
+        "notes": "",
+        "updated_at": "2026-11-12T11:15:52.643Z"
+      },
+      "480113209": {
+        "status": "approved",
+        "label": "GeForce RTX 4060 Ti 8 GB",
+        "notes": "",
+        "updated_at": "2026-11-12T11:14:40.418Z"
+      },
+      "480157991": {
+        "status": "approved",
+        "label": "Unknown",
+        "notes": "Not a consumer card, fine to ignore for now.",
+        "updated_at": "2026-11-12T11:18:05.609Z"
+      },
+      "480259362": {
+        "status": "approved",
+        "label": "GeForce GTX 1660 SUPER 6 GB",
+        "notes": "",
+        "updated_at": "2026-11-12T11:18:46.782Z"
+      },
+      "480293520": {
+        "status": "approved",
+        "label": "GeForce GTX 1660 SUPER 6 GB",
+        "notes": "",
+        "updated_at": "2026-11-12T11:13:46.578Z"
+      },
+      "480344789": {
+        "status": "approved",
+        "label": "GeForce RTX 4070 12 GB",
+        "notes": "",
+        "updated_at": "2026-11-12T11:14:42.931Z"
+      },
+      "480361881": {
+        "status": "approved",
+        "label": "Intel Arc B580 12 GB",
+        "notes": "",
+        "updated_at": "2026-11-12T11:15:20.829Z"
+      },
+      "480405518": {
+        "status": "approved",
+        "label": "Intel Arc B570 10 GB",
+        "notes": "",
+        "updated_at": "2026-11-12T11:15:19.125Z"
+      },
+      "480452627": {
+        "status": "approved",
+        "label": "GeForce RTX 5060 8 GB",
+        "notes": "",
+        "updated_at": "2026-11-12T11:14:47.304Z"
+      },
+      "480481892": {
+        "status": "approved",
+        "label": "Radeon RX 7600 XT 16 GB",
+        "notes": "",
+        "updated_at": "2026-11-12T11:16:08.131Z"
+      },
+      "480486713": {
+        "status": "approved",
+        "label": "Radeon RX 7900 XT 20 GB",
+        "notes": "",
+        "updated_at": "2026-11-12T11:16:14.222Z"
+      },
+      "480512562": {
+        "status": "approved",
+        "label": "Radeon RX 6800 16 GB",
+        "notes": "",
+        "updated_at": "2026-11-12T11:16:01.913Z"
+      },
+      "480554197": {
+        "status": "approved",
+        "label": "Radeon RX 6750 XT 12 GB",
+        "notes": "",
+        "updated_at": "2026-11-12T11:16:00.396Z"
+      },
+      "480587166": {
+        "status": "approved",
+        "label": "Radeon RX 6700 XT 12 GB",
+        "notes": "",
+        "updated_at": "2026-11-12T11:15:58.953Z"
+      },
+      "480622957": {
+        "status": "approved",
+        "label": "GeForce RTX 5050 8 GB",
+        "notes": "",
+        "updated_at": "2026-11-12T11:14:46.221Z"
+      },
+      "480704289": {
+        "status": "approved",
+        "label": "GeForce RTX 5060 Ti 8 GB",
+        "notes": "",
+        "updated_at": "2026-11-12T11:14:48.480Z"
+      },
+      "480726392": {
+        "status": "approved",
+        "label": "GeForce RTX 3050 6 GB",
+        "notes": "",
+        "updated_at": "2026-11-12T11:14:07.645Z"
+      },
+      "480750298": {
+        "status": "approved",
+        "label": "GeForce RTX 3080 Ti 12 GB",
+        "notes": "",
+        "updated_at": "2026-11-12T11:14:35.305Z"
+      },
+      "480753989": {
+        "status": "approved",
+        "label": "Unknown",
+        "notes": "non consumer. Fine to ignore.",
+        "updated_at": "2026-11-12T11:23:57.067Z"
+      },
+      "480794296": {
+        "status": "approved",
+        "label": "Unknown",
+        "notes": "eGPU? Fine to ignore.",
+        "updated_at": "2026-11-12T11:18:37.167Z"
+      },
+      "480795433": {
+        "status": "approved",
+        "label": "Intel Arc A770 16 GB",
+        "notes": "",
+        "updated_at": "2026-11-12T11:15:17.035Z"
+      },
+      "480802251": {
+        "status": "approved",
+        "label": "GeForce RTX 3070 8 GB",
+        "notes": "",
+        "updated_at": "2026-11-12T11:14:28.898Z"
+      }
+    }
+  }
+}

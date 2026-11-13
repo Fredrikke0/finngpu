@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FinnGPU listing review</title>
+  <style>
+    :root { color-scheme: light dark; font-family: system-ui, sans-serif; }
+    body { max-width: 920px; margin: auto; padding: 24px; background: light-dark(#f4f6fa, #141923); color: light-dark(#172033, #edf1fa); }
+    h1 { margin-bottom: 8px; } h2 { overflow-wrap: anywhere; }
+    p { line-height: 1.5; }
+    .toolbar, .navigation, .actions { display: flex; gap: 12px; flex-wrap: wrap; align-items: end; margin: 20px 0; }
+    label { display: grid; gap: 6px; flex: 1; min-width: 180px; }
+    button, select, input, textarea { font: inherit; border: 1px solid #8794ab; border-radius: 6px; padding: 10px; }
+    button { cursor: pointer; } button:disabled { cursor: default; opacity: .5; }
+    button.primary { background: #245cbe; color: white; border-color: #245cbe; }
+    a { color: light-dark(#154db0, #9dc1ff); }
+    article { background: light-dark(white, #202938); border: 1px solid #8794ab; padding: 24px; border-radius: 12px; }
+    .models { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin: 20px 0; }
+    .model { padding: 16px; border-radius: 8px; background: light-dark(#edf2fc, #111b2c); overflow-wrap: anywhere; }
+    .model strong { display: block; margin-top: 6px; }
+    .badge { display: inline-block; padding: 4px 10px; border-radius: 6px; font-weight: 600; background: light-dark(#dcefe1, #194a30); }
+    .badge.mismatch { background: light-dark(#ffe1c1, #663c11); }
+    #description { white-space: pre-wrap; overflow-wrap: anywhere; }
+    #warning { padding: 12px; border: 2px solid #cc7d20; }
+    #position { flex: 1; text-align: center; }
+    #notes { min-height: 70px; resize: vertical; }
+    small, .muted { color: light-dark(#48546b, #b9c5d9); }
+    [hidden] { display: none !important; }
+    :focus-visible { outline: 3px solid #d88a25; outline-offset: 3px; }
+  </style>
+</head>
+<body>
+  <h1>FinnGPU listing review</h1>
+  <p>Check the provisional label against the listing text. Mismatches appear first.
+    Saving here does not edit the project dataset: export your reviewed labels when finished.</p>
+  <p id="summary" aria-live="polite"></p>
+  <p id="warning" role="alert" hidden></p>
+  <div class="toolbar">
+    <label>Show
+      <select id="filter">
+        <option value="all">All listings</option>
+        <option value="mismatch">Matcher mismatches</option>
+        <option value="unreviewed">Unreviewed / unsure</option>
+        <option value="reviewed">Approved / corrected</option>
+      </select>
+    </label>
+    <label>Search title, ID or model <input id="search" type="search"></label>
+    <button id="export">Export reviewed JSON</button>
+  </div>
+  <div class="navigation">
+    <button id="previous">Previous</button>
+    <span id="position" aria-live="polite"></span>
+    <button id="next">Next</button>
+  </div>
+  <p id="empty" hidden>No listings match this filter.</p>
+  <article id="card">
+    <span id="badge" class="badge"></span>
+    <h2 id="title"></h2>
+    <a id="source" target="_blank" rel="noopener noreferrer">Open original Finn listing</a>
+    <span id="ad-id" class="muted"></span>
+    <div class="models">
+      <div class="model">Provisional expected label<strong id="expected"></strong></div>
+      <div class="model">Actual matcher result<strong id="actual"></strong></div>
+    </div>
+    <p id="match-source" class="muted"></p>
+    <details id="description-panel" open>
+      <summary>Saved GPU-relevant description excerpt</summary>
+      <p id="description"></p>
+    </details>
+    <p id="no-description" class="muted">No description excerpt was saved for this listing.</p>
+    <label>Your expected label
+      <input id="label" list="models" autocomplete="off">
+    </label>
+    <datalist id="models"></datalist>
+    <p><label>Review notes <textarea id="notes" placeholder="Optional explanation or uncertainty"></textarea></label></p>
+    <div class="actions">
+      <button id="save" class="primary">Approve / save corrected label</button>
+      <button id="unsure">Mark unsure</button>
+      <button id="clear">Clear this review</button>
+    </div>
+    <p id="status" role="status"></p>
+  </article>
+  <p><small>Work is saved in this browser when local storage is available. Export JSON to keep a portable copy.
+    Live ads may have changed or disappeared; saved text is the benchmark snapshot.
+    Unsure and unreviewed cases retain their original labels in exports.</small></p>
+  <script id="review-data" type="application/json">__REVIEW_DATA__</script>
+  <script>
+    "use strict";
+    const data = JSON.parse(document.getElementById("review-data").textContent);
+    const $ = id => document.getElementById(id);
+    const rows = [...data.rows].sort((a, b) => Number(a.correct === "True") - Number(b.correct === "True"));
+    const key = "finngpu-review:" + data.dataset.captured_at + ":" + rows.map(row => row.ad_id).sort().join(",");
+    const complete = review => review && ["approved", "corrected"].includes(review.status);
+    let reviews = {};
+    let index = 0;
+    let draft = false;
+    function warn(message) { $("warning").textContent = message; $("warning").hidden = false; }
+    try {
+      const saved = JSON.parse(localStorage.getItem(key) || "{}");
+      if (!saved || typeof saved !== "object" || Array.isArray(saved)) throw new Error("Invalid saved review format");
+      for (const [id, review] of Object.entries(saved)) {
+        if (!rows.some(row => row.ad_id === id) || !review ||
+            !["approved", "corrected", "unsure"].includes(review.status) ||
+            !data.models.includes(review.label) || typeof review.notes !== "string") {
+          throw new Error("Invalid saved review entry");
+        }
+      }
+      reviews = saved;
+    } catch (error) { warn("Could not restore browser reviews: " + error.message + ". Export your work to keep a copy."); }
+    for (const model of data.models) {
+      const option = document.createElement("option");
+      option.value = model;
+      $("models").append(option);
+    }
+    function filtered() {
+      const query = $("search").value.toLowerCase().trim();
+      return rows.filter(row => {
+        const mode = $("filter").value;
+        const keep = mode === "all" ||
+          (mode === "mismatch" && row.correct !== "True") ||
+          (mode === "unreviewed" && !complete(reviews[row.ad_id])) ||
+          (mode === "reviewed" && complete(reviews[row.ad_id]));
+        return keep && [row.title, row.ad_id, row.expected_model, row.matched_model]
+          .some(value => value.toLowerCase().includes(query));
+      });
+    }
+    function current() { return filtered()[index]; }
+    function canLeave() { return !draft || confirm("Discard unsaved label or note changes?"); }
+    function render() {
+      const list = filtered();
+      index = Math.max(0, Math.min(index, list.length - 1));
+      const row = list[index];
+      const count = Object.values(reviews).filter(complete).length;
+      const unsure = Object.values(reviews).filter(review => review.status === "unsure").length;
+      $("summary").textContent = `${rows.length} listings | ${rows.filter(row => row.correct !== "True").length} matcher mismatches | ${count} approved/corrected | ${unsure} unsure | captured ${data.dataset.captured_at}`;
+      $("position").textContent = list.length ? `${index + 1} of ${list.length}` : "0 of 0";
+      $("previous").disabled = index === 0;
+      $("next").disabled = index >= list.length - 1;
+      $("card").hidden = !row;
+      $("empty").hidden = Boolean(row);
+      draft = false;
+      if (!row) return;
+      const review = reviews[row.ad_id];
+      $("title").textContent = row.title;
+      $("ad-id").textContent = " #" + row.ad_id;
+      $("source").href = "https://www.finn.no/recommerce/forsale/item/" + encodeURIComponent(row.ad_id);
+      $("badge").textContent = row.correct === "True" ? "Matcher agrees" : "Matcher mismatch";
+      $("badge").className = row.correct === "True" ? "badge" : "badge mismatch";
+      $("expected").textContent = row.expected_model;
+      $("actual").textContent = row.matched_model;
+      $("match-source").textContent = row.description_match
+        ? "Description consulted. Title result: " + row.title_match + "; resolved result: " + row.description_match
+        : "Title result: " + row.title_match + "; no description evidence used.";
+      $("description").textContent = row.description_excerpt;
+      $("description-panel").hidden = !row.description_excerpt;
+      $("no-description").hidden = Boolean(row.description_excerpt);
+      $("label").value = review ? review.label : row.expected_model;
+      $("notes").value = review ? review.notes : "";
+      $("status").textContent = review ? "Saved review: " + review.status : "Not reviewed";
+      $("clear").disabled = !review;
+    }
+    function persist() {
+      try { localStorage.setItem(key, JSON.stringify(reviews)); }
+      catch (error) { warn("Browser saving failed: " + error.message + ". Export JSON before closing this page."); }
+    }
+    function save(status) {
+      const row = current();
+      if (!row) return;
+      const nextId = filtered()[index + 1]?.ad_id;
+      const label = $("label").value.trim();
+      if (!data.models.includes(label)) {
+        $("status").textContent = "Choose a supported model, Unknown or Multi.";
+        $("label").focus();
+        return;
+      }
+      reviews[row.ad_id] = {
+        status: status === "unsure" ? "unsure" : label === row.expected_model ? "approved" : "corrected",
+        label, notes: $("notes").value, updated_at: new Date().toISOString()
+      };
+      persist();
+      if (status !== "unsure" && nextId) {
+        index = filtered().findIndex(candidate => candidate.ad_id === nextId);
+      }
+      render();
+    }
+    for (const id of ["label", "notes"]) $(id).addEventListener("input", () => { draft = true; });
+    $("save").addEventListener("click", () => save("reviewed"));
+    $("unsure").addEventListener("click", () => save("unsure"));
+    $("clear").addEventListener("click", () => {
+      if (!canLeave()) return;
+      delete reviews[current().ad_id];
+      persist();
+      render();
+    });
+    $("previous").addEventListener("click", () => { if (canLeave()) { index--; render(); } });
+    $("next").addEventListener("click", () => { if (canLeave()) { index++; render(); } });
+    let previousFilter = $("filter").value;
+    let previousSearch = "";
+    $("filter").addEventListener("change", () => {
+      if (!canLeave()) { $("filter").value = previousFilter; return; }
+      previousFilter = $("filter").value;
+      index = 0; render();
+    });
+    $("search").addEventListener("input", () => {
+      if (!canLeave()) { $("search").value = previousSearch; return; }
+      previousSearch = $("search").value;
+      index = 0; render();
+    });
+    $("export").addEventListener("click", () => {
+      if (draft) { $("status").textContent = "Save your current edits before exporting."; return; }
+      const exported = {
+        ...data.dataset,
+        cases: data.dataset.cases.map(record => ({
+          ...record,
+          expected_model: complete(reviews[record.ad_id]) ? reviews[record.ad_id].label : record.expected_model
+        })),
+        review: { exported_at: new Date().toISOString(), decisions: reviews }
+      };
+      const url = URL.createObjectURL(new Blob([JSON.stringify(exported, null, 2) + "\n"], {type: "application/json"}));
+      const link = document.createElement("a");
+      link.href = url; link.download = "current_listings.reviewed.json";
+      document.body.append(link); link.click(); link.remove();
+      setTimeout(() => URL.revokeObjectURL(url), 1000);
+    });
+    window.addEventListener("beforeunload", event => { if (draft) { event.preventDefault(); event.returnValue = ""; } });
+    render();
+  </script>
+</body>
+</html>
